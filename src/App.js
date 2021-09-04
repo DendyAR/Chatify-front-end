@@ -3,14 +3,16 @@ import {
   Switch, // cabang antar halaman
   Route,
 } from "react-router-dom";
-import {Login} from './pages/public/Login'
-import {Register} from './pages/public/Register'
-import {ForgotPassword } from './pages/public/ForgotPassword'
-import {SplashScreen} from './pages/public/SplashScreen'
-import {NoPageFound} from './pages/public/NotFound'
-import {Chatlist, CallHistory}  from './pages/Private'
+import Login from './pages/public/Login/index'
+import Register from './pages/public/Register/index'
+import ForgotPassword  from './pages/public/ForgotPassword/index'
+import SplashScreen from './pages/public/SplashScreen/index'
+import NoPageFound from './pages/public/NotFound/index'
+import Chatlist   from './pages/Private/ChatLayout/index'
+import CallHistory  from './pages/Private/CallHistory/index'
 import React from 'react'
-import { PrivateRoute, PublicRoute} from "./components";
+import PrivateRoute from "./components/Route/privateRoute";
+import PublicRoute from "./components/Route/publicRoute"
 import { Provider } from 'react-redux'
 import configureStore from './Redux/store'
 import { PersistGate } from "redux-persist/integration/react";
