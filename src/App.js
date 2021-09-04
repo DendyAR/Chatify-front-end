@@ -3,7 +3,11 @@ import {
   Switch, // cabang antar halaman
   Route,
 } from "react-router-dom";
-import {Login, Register, ForgotPassword, SplashScreen, NoPageFound} from './pages/Public'
+import {Login} from './pages/public/Login'
+import {Register} from './pages/public/Register'
+import {ForgotPassword } from './pages/public/ForgotPassword'
+import {SplashScreen} from './pages/public/SplashScreen'
+import {NoPageFound} from './pages/public/NotFound'
 import {Chatlist, CallHistory}  from './pages/Private'
 import React from 'react'
 import { PrivateRoute, PublicRoute} from "./components";
